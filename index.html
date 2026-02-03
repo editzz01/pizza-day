@@ -2,29 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pizza Day</title>
+  <title>Pizza Day | Online Restaurant</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- ===== TOP HEADER ===== -->
-<header class="top-header">
-  <h1>PIZZA DAY</h1>
-  <p>Fresh • Cheesy • 100% Vegetarian</p>
+<!-- ================= HEADER ================= -->
+<header class="hero">
+  <h1>🍕 PIZZA DAY</h1>
+  <p>Welcome to Pizza Day – Online Restaurant</p>
+  <span>Fresh • Hot • 100% Vegetarian</span>
+
+  <div class="hero-btns">
+    <a href="#menu" class="btn">📜 View Menu</a>
+    <a href="#order" class="btn whatsapp">🟢 Order on WhatsApp</a>
+  </div>
 </header>
 
-<!-- ===== ORDER BUTTON ===== -->
-<div class="btn-area">
-  <a class="btn whatsapp"
-     href="https://wa.me/918218251031?text=Hello%20Pizza%20Day%20🍕%0A%0AI%20want%20to%20order%3A%0A%0AName%3A%20%0AItem%3A%20%0AQuantity%3A%20%0AAddress%3A%20%0APayment%3A%20UPI"
-     target="_blank">
-     🟢 ORDER ON WHATSAPP
-  </a>
-</div>
-
-<!-- ===== MENU ===== -->
-<section class="menu-section">
+<!-- ================= MENU ================= -->
+<section id="menu" class="menu-section">
   <h2>🍕 Our Menu</h2>
 
   <!-- COOLERS -->
@@ -39,14 +36,14 @@
       <li>Strawberry Shake <span>₹80</span></li>
       <li>Mango Shake <span>₹80</span></li>
       <li>Kitkat Shake <span>₹80</span></li>
-      <li>Oreo Shake <span>₹80</span></li>
-      <li class="extra">With Ice Cream Extra <span>₹20</span></li>
+      <li>Oriyo Shake <span>₹80</span></li>
+      <li class="special">Ice Cream Extra <span>₹20</span></li>
     </ul>
   </div>
 
   <!-- PIZZA DELIGHT -->
   <div class="menu-box">
-    <h3>🍕 Pizza Delight (Personal)</h3>
+    <h3>🍕 Pizza Delight (Personal ₹89)</h3>
     <ul>
       <li>Onion <span>₹89</span></li>
       <li>Capsicum <span>₹89</span></li>
@@ -67,7 +64,7 @@
 
   <!-- PIZZA POPULAR -->
   <div class="menu-box">
-    <h3>🍕 Pizza Popular</h3>
+    <h3>🔥 Pizza Popular</h3>
     <ul>
       <li>Veggie Lover <span>₹150 / ₹230</span></li>
       <li>Spicy Mushroom <span>₹150 / ₹230</span></li>
@@ -77,7 +74,7 @@
 
   <!-- PIZZA GOLD -->
   <div class="menu-box">
-    <h3>🍕 Pizza Gold</h3>
+    <h3>⭐ Pizza Gold</h3>
     <ul>
       <li>Teekha Paneer <span>₹170 / ₹270</span></li>
       <li>Chilli Shot Paneer <span>₹170 / ₹270</span></li>
@@ -87,41 +84,17 @@
     </ul>
   </div>
 
-  <!-- PIZZA SUPREME -->
+  <!-- BURGER / PASTA / ICE CREAM -->
   <div class="menu-box">
-    <h3>🍕 Pizza Supreme</h3>
-    <ul>
-      <li>Mexican Twist <span>₹230 / ₹320</span></li>
-      <li>Veggie Supreme <span>₹230 / ₹320</span></li>
-    </ul>
-  </div>
-
-  <!-- BURGER -->
-  <div class="menu-box">
-    <h3>🍔 Burger</h3>
+    <h3>🍔 Burgers</h3>
     <ul>
       <li>Aloo Tikki Burger <span>₹50</span></li>
       <li>Bombay Burger <span>₹60</span></li>
       <li>Pizza Burger <span>₹80</span></li>
       <li>Veg Popular Burger <span>₹80</span></li>
-      <li>Masala Punjabi Burger <span>₹100</span></li>
-      <li>Mexican Burger <span>₹100</span></li>
-      <li>Super Veg Burger <span>₹100</span></li>
-      <li>Paneer Spicy Burger <span>₹120</span></li>
     </ul>
   </div>
 
-  <!-- FRIES -->
-  <div class="menu-box">
-    <h3>🍟 Fries</h3>
-    <ul>
-      <li>Salt French Fries <span>₹50</span></li>
-      <li>Peri Peri Fries <span>₹60</span></li>
-      <li>Cheesy Fries <span>₹90</span></li>
-    </ul>
-  </div>
-
-  <!-- PASTA -->
   <div class="menu-box">
     <h3>🍝 Pasta</h3>
     <ul>
@@ -133,7 +106,6 @@
     </ul>
   </div>
 
-  <!-- ICE CREAM -->
   <div class="menu-box">
     <h3>🍨 Ice Cream</h3>
     <ul>
@@ -144,38 +116,49 @@
     </ul>
   </div>
 </section>
-  
-<section class="map-section">
-  <h2>📍 Find Us on Map</h2>
 
-  <div class="map-box">
-    <iframe
-      src="https://www.google.com/maps?q=HfSVBDEmv7DjUxcr9&output=embed"
-      loading="lazy"
-      allowfullscreen>
-    </iframe>
+<!-- ================= PAYMENT & ORDER ================= -->
+<section id="order" class="payment-section">
+  <h2>💳 Payment & Order</h2>
+
+  <div class="btn-area">
+    <a class="btn whatsapp"
+       href="https://wa.me/918218251031?text=Hello%20Pizza%20Day%20🍕%0AI%20want%20to%20order%20(Cash%20On%20Delivery)%0AName:%0AItems:%0AAddress:"
+       target="_blank">
+       🟢 Cash on Delivery (WhatsApp)
+    </a>
+
+    <a class="btn pay"
+       href="upi://pay?pa=raghav399@ybl&pn=Pizza%20Day&cu=INR">
+       💳 Pay Now (UPI)
+    </a>
   </div>
 
-  <a class="btn map-btn"
-     href="https://maps.app.goo.gl/HfSVBDEmv7DjUxcr9"
-     target="_blank">
-     📍 Open in Google Maps
-  </a>
-</section>
-<!-- ===== QR PAYMENT ===== -->
-<section class="qr-section" id="scan">
-  <h2>📲 Scan & Pay</h2>
-
   <div class="qr-box">
-    <img src="IMG-20260203-WA0000.jpg" alt="UPI QR Code">
+    <img src="qr.png" alt="UPI QR">
     <p>UPI ID: <b>raghav399@ybl</b></p>
   </div>
 </section>
 
-<!-- ===== FOOTER ===== -->
+<!-- ================= ABOUT ================= -->
+<section class="about">
+  <h2>ℹ️ About Pizza Day</h2>
+  <p>
+    Pizza Day is a 100% vegetarian restaurant serving fresh, hot and delicious
+    pizzas, burgers, shakes and more.  
+    Located near Bulandshahr Bus Stand, Anupshahr.
+  </p>
+
+  <iframe
+    src="https://www.google.com/maps?q=HfSVBDEmv7DjUxcr9&output=embed">
+  </iframe>
+</section>
+
+<!-- ================= CONTACT ================= -->
 <footer>
-  📍 Anupshahr, Near Bulandshahr Bus Stand <br>
-  📞 82182 51031 | 🕙 10:00 AM – 11:00 PM
+  <p>📍 Anupshahr, Near Bulandshahr Bus Stand</p>
+  <p>📞 82182 51031 | ⏰ 10:00 AM – 11:00 PM</p>
+  <p>© 2025 Pizza Day | Order via WhatsApp & UPI</p>
 </footer>
 
 </body>
