@@ -3,405 +3,167 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: Arial, sans-serif;
 }
 
-/* ===== BODY BACKGROUND ===== */
 body {
   background: radial-gradient(circle at top, #1a1a1a, #000);
   color: #fff;
-  line-height: 1.6;
 }
 
-/* ===== MENU SECTION ===== */
-.menu-section {
+/* ===== HEADER ===== */
+.top-header {
+  text-align: center;
   padding: 40px 15px;
-  max-width: 1200px;
-  margin: auto;
+  background: #b30000;
 }
 
-.menu-section h2 {
-  text-align: center;
-  font-size: 2.8rem;
-  margin-bottom: 30px;
+.top-header h1 {
+  font-size: 3.2rem;
+  letter-spacing: 3px;
   color: #ffcc00;
-  text-shadow: 0 0 10px rgba(255,204,0,0.6);
+  text-shadow: 0 0 20px #000;
 }
 
-/* ===== MENU BOX ===== */
-.menu-box {
-  background: linear-gradient(145deg, #0b0b0b, #1c1c1c);
-  border: 2px solid #ff0000;
-  border-radius: 14px;
-  padding: 25px;
-  margin-bottom: 30px;
-  box-shadow: 0 0 25px rgba(255,0,0,0.25);
-}
-
-.menu-box h3 {
-  font-size: 1.6rem;
-  margin-bottom: 15px;
-  color: #ff0000;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-left: 6px solid #ffcc00;
-  padding-left: 10px;
-}
-
-/* ===== MENU LIST ===== */
-.menu-box ul {
-  list-style: none;
-}
-
-.menu-box li {
-  display: flex;
-  justify-content: space-between;
-  padding: 8px 0;
+.top-header p {
+  margin-top: 10px;
   font-size: 1rem;
-  border-bottom: 1px dashed rgba(255,255,255,0.15);
 }
 
-.menu-box li:last-child {
-  border-bottom: none;
-}
-
-.menu-box li span {
-  color: #ffcc00;
-  font-weight: bold;
-}
-
-/* ===== SPECIAL TAG ===== */
-.special {
-  color: #00ff90;
-  font-weight: bold;
-}
-
-/* ===== OFFER STRIP ===== */
-.offer {
-  background: linear-gradient(90deg, #ff0000, #ff9900);
-  color: #000;
-  text-align: center;
-  padding: 12px;
-  font-weight: bold;
-  border-radius: 10px;
-  margin: 25px 0;
-  box-shadow: 0 0 20px rgba(255,153,0,0.6);
-}
-
-/* ===== BUTTONS ===== */
-./* ===== ORDER BUTTON POWER FIX ===== */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-
-  font-size: 1.25rem;
-  font-weight: 700;
-
-  padding: 18px 40px;
-  border-radius: 60px;
-
-  text-decoration: none;
-  cursor: pointer;
-
-  transition: all 0.3s ease;
-}
-
-/* WhatsApp Order Button */
-.btn.whatsapp {
-  background: linear-gradient(135deg, #25D366, #1ebc57);
-  color: #000;
-
-  box-shadow:
-    0 0 15px rgba(37, 211, 102, 0.8),
-    0 0 35px rgba(37, 211, 102, 0.6);
-
-  animation: pulseGlow 2s infinite;
-}
-
-/* Hover Effect */
-.btn.whatsapp:hover {
-  transform: scale(1.12);
-  box-shadow:
-    0 0 25px rgba(37, 211, 102, 1),
-    0 0 60px rgba(37, 211, 102, 0.9);
-}
-
-/* Pulse Animation */
-@keyframes pulseGlow {
-  0% {
-    box-shadow: 0 0 15px rgba(37, 211, 102, 0.6);
-  }
-  50% {
-    box-shadow: 0 0 35px rgba(37, 211, 102, 1);
-  }
-  100% {
-    box-shadow: 0 0 15px rgba(37, 211, 102, 0.6);
-  }
-}
-/* ===== FOOTER ===== */
-footer {
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-  font-size: 0.9rem;
-  color: #aaa;
-  border-top: 1px solid rgba(255,255,255,0.1);
-}
-
-/* ===== MOBILE RESPONSIVE ===== */
-@media (max-width: 600px) {
-  .menu-section h2 {
-    font-size: 2.2rem;
-  }
-
-  .menu-box h3 {
-    font-size: 1.3rem;
-  }
-
-  .menu-box li {
-    font-size: 0.95rem;
-  }
-}
-/* ===== QR PAYMENT SECTION ===== */
-.qr-section {
-  padding: 50px 15px;
-  text-align: center;
-}
-
-.qr-section h2 {
-  color: #ffcc00;
-  margin-bottom: 25px;
-  font-size: 2rem;
-}
-
-.qr-box {
-  background: linear-gradient(145deg, #0b0b0b, #1c1c1c);
-  border: 2px solid #00ff90;
-  border-radius: 16px;
-  padding: 25px;
-  max-width: 360px;
-  margin: auto;
-  box-shadow: 0 0 25px rgba(0,255,144,0.35);
-}
-
-.qr-box img {
-  width: 100%;
-  max-width: 260px;
-  border-radius: 12px;
-  margin-bottom: 15px;
-}
-
-.qr-box p {
-  margin-bottom: 15px;
-  color: #fff;
-  font-size: 1.05rem;
-}
-/* ===== RESET ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-/* ===== BODY BACKGROUND ===== */
-body {
-  background: radial-gradient(circle at top, #1a1a1a, #000);
-  color: #fff;
-  line-height: 1.6;
-}
-
-/* ===== MENU SECTION ===== */
-.menu-section {
-  padding: 40px 15px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.menu-section h2 {
-  text-align: center;
-  font-size: 2.8rem;
-  margin-bottom: 30px;
-  color: #ffcc00;
-  text-shadow: 0 0 10px rgba(255,204,0,0.6);
-}
-
-/* ===== MENU BOX ===== */
-.menu-box {
-  background: linear-gradient(145deg, #0b0b0b, #1c1c1c);
-  border: 2px solid #ff0000;
-  border-radius: 14px;
-  padding: 25px;
-  margin-bottom: 30px;
-  box-shadow: 0 0 25px rgba(255,0,0,0.25);
-}
-
-.menu-box h3 {
-  font-size: 1.6rem;
-  margin-bottom: 15px;
-  color: #ff0000;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-left: 6px solid #ffcc00;
-  padding-left: 10px;
-}
-
-/* ===== MENU LIST ===== */
-.menu-box ul {
-  list-style: none;
-}
-
-.menu-box li {
-  display: flex;
-  justify-content: space-between;
-  padding: 8px 0;
-  font-size: 1rem;
-  border-bottom: 1px dashed rgba(255,255,255,0.15);
-}
-
-.menu-box li:last-child {
-  border-bottom: none;
-}
-
-.menu-box li span {
-  color: #ffcc00;
-  font-weight: bold;
-}
-
-/* ===== SPECIAL TAG ===== */
-.special {
-  color: #00ff90;
-  font-weight: bold;
-}
-
-/* ===== OFFER STRIP ===== */
-.offer {
-  background: linear-gradient(90deg, #ff0000, #ff9900);
-  color: #000;
-  text-align: center;
-  padding: 12px;
-  font-weight: bold;
-  border-radius: 10px;
-  margin: 25px 0;
-  box-shadow: 0 0 20px rgba(255,153,0,0.6);
-}
-
-/* ===== BUTTONS ===== */
+/* ===== BUTTON ===== */
 .btn-area {
   text-align: center;
-  margin-top: 30px;
+  margin: 30px 0;
 }
 
 .btn {
   display: inline-block;
-  margin: 10px;
-  padding: 14px 30px;
-  font-size: 1rem;
+  padding: 20px 45px;
+  font-size: 1.3rem;
   font-weight: bold;
-  border-radius: 50px;
+  border-radius: 60px;
   text-decoration: none;
-  color: #000;
-  background: #ffcc00;
-  box-shadow: 0 0 20px rgba(255,204,0,0.7);
-  transition: 0.3s;
 }
 
 .btn.whatsapp {
   background: #25D366;
   color: #000;
+  box-shadow: 0 0 25px #25D366;
 }
 
-.btn.upi {
-  background: #ffffff;
-  color: #000;
+/* ===== MENU ===== */
+.menu-section {
+  padding: 30px 15px;
+  max-width: 1100px;
+  margin: auto;
 }
 
-.btn:hover {
-  transform: scale(1.08);
+.menu-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffcc00;
+  margin-bottom: 25px;
+}
+
+.menu-box {
+  background: linear-gradient(145deg, #0b0b0b, #1c1c1c);
+  border: 2px solid red;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.menu-box h3 {
+  color: #ff0000;
+  margin-bottom: 15px;
+  border-left: 6px solid #ffcc00;
+  padding-left: 10px;
+}
+
+.menu-box ul {
+  list-style: none;
+}
+
+.menu-box li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px dashed #444;
+}
+
+.menu-box span {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+/* ===== QR ===== */
+.qr-section {
+  text-align: center;
+  padding: 40px 15px;
+}
+
+.qr-box {
+  max-width: 360px;
+  margin: auto;
+  background: #000;
+  border: 3px solid #ffcc00;
+  border-radius: 18px;
+  padding: 25px;
+}
+
+.qr-box img {
+  width: 100%;
+  max-width: 260px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.qr-box p {
+  margin-top: 15px;
 }
 
 /* ===== FOOTER ===== */
 footer {
   text-align: center;
   padding: 20px;
-  margin-top: 40px;
   font-size: 0.9rem;
   color: #aaa;
-  border-top: 1px solid rgba(255,255,255,0.1);
 }
 
-/* ===== MOBILE RESPONSIVE ===== */
+/* ===== MOBILE ===== */
 @media (max-width: 600px) {
-  .menu-section h2 {
-    font-size: 2.2rem;
-  }
-
-  .menu-box h3 {
-    font-size: 1.3rem;
-  }
-
-  .menu-box li {
-    font-size: 0.95rem;
-  }
-}
-@media (max-width: 768px) {
-
-  body {
-    font-size: 15px;
-  }
-
-  .menu-section {
-    padding: 25px 10px;
-  }
-
-  .menu-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-
-}
-@media (max-width: 768px) {
-
-  .menu-box {
-    padding: 18px;
-    border-radius: 12px;
-    margin-bottom: 22px;
-  }
-
-  .menu-box h3 {
-    font-size: 1.25rem;
-  }
-
-  .menu-box li {
-    font-size: 0.95rem;
-    padding: 7px 0;
-  }
-
-}
-
-@media (max-width: 768px) {
-
-  .btn-area {
-    margin-top: 25px;
+  .top-header h1 {
+    font-size: 2.4rem;
   }
 
   .btn {
-    width: 100%;
-    max-width: 340px;
-    font-size: 1.15rem;
-    padding: 18px 0;
-  }
-
-}
-@media (max-width: 768px) {
-
-  .qr-section img {
     width: 90%;
-    max-width: 300px;
-    margin: 15px auto;
-    display: block;
+    padding: 20px 0;
   }
+}
+.menu-box {
+  background: linear-gradient(160deg, #050505, #141414);
+  border: 2px solid #c40000;
+  box-shadow: 0 0 25px rgba(255,0,0,0.35);
+}
 
+.menu-box h3 {
+  color: #ff2a2a;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #000;
+}
+
+.menu-box li {
+  font-size: 1rem;
+}
+
+.menu-box li span {
+  color: #ffd700;
+}
+
+.extra {
+  color: #00ff99;
+  font-weight: bold;
 }
