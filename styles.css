@@ -180,3 +180,151 @@ footer {
   color: #fff;
   font-size: 1.05rem;
 }
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== BODY BACKGROUND ===== */
+body {
+  background: radial-gradient(circle at top, #1a1a1a, #000);
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* ===== MENU SECTION ===== */
+.menu-section {
+  padding: 40px 15px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.menu-section h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  color: #ffcc00;
+  text-shadow: 0 0 10px rgba(255,204,0,0.6);
+}
+
+/* ===== MENU BOX ===== */
+.menu-box {
+  background: linear-gradient(145deg, #0b0b0b, #1c1c1c);
+  border: 2px solid #ff0000;
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 25px rgba(255,0,0,0.25);
+}
+
+.menu-box h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #ff0000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-left: 6px solid #ffcc00;
+  padding-left: 10px;
+}
+
+/* ===== MENU LIST ===== */
+.menu-box ul {
+  list-style: none;
+}
+
+.menu-box li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 1rem;
+  border-bottom: 1px dashed rgba(255,255,255,0.15);
+}
+
+.menu-box li:last-child {
+  border-bottom: none;
+}
+
+.menu-box li span {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+/* ===== SPECIAL TAG ===== */
+.special {
+  color: #00ff90;
+  font-weight: bold;
+}
+
+/* ===== OFFER STRIP ===== */
+.offer {
+  background: linear-gradient(90deg, #ff0000, #ff9900);
+  color: #000;
+  text-align: center;
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 25px 0;
+  box-shadow: 0 0 20px rgba(255,153,0,0.6);
+}
+
+/* ===== BUTTONS ===== */
+.btn-area {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 14px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #000;
+  background: #ffcc00;
+  box-shadow: 0 0 20px rgba(255,204,0,0.7);
+  transition: 0.3s;
+}
+
+.btn.whatsapp {
+  background: #25D366;
+  color: #000;
+}
+
+.btn.upi {
+  background: #ffffff;
+  color: #000;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #aaa;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .menu-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .menu-box h3 {
+    font-size: 1.3rem;
+  }
+
+  .menu-box li {
+    font-size: 0.95rem;
+  }
+}
