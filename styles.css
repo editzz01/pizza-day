@@ -89,39 +89,57 @@ body {
 }
 
 /* ===== BUTTONS ===== */
-.btn-area {
-  text-align: center;
-  margin-top: 30px;
-}
-
+./* ===== ORDER BUTTON POWER FIX ===== */
 .btn {
-  display: inline-block;
-  margin: 10px;
-  padding: 14px 30px;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  padding: 18px 40px;
+  border-radius: 60px;
+
   text-decoration: none;
-  color: #000;
-  background: #ffcc00;
-  box-shadow: 0 0 20px rgba(255,204,0,0.7);
-  transition: 0.3s;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
 }
 
+/* WhatsApp Order Button */
 .btn.whatsapp {
-  background: #25D366;
+  background: linear-gradient(135deg, #25D366, #1ebc57);
   color: #000;
+
+  box-shadow:
+    0 0 15px rgba(37, 211, 102, 0.8),
+    0 0 35px rgba(37, 211, 102, 0.6);
+
+  animation: pulseGlow 2s infinite;
 }
 
-.btn.upi {
-  background: #ffffff;
-  color: #000;
+/* Hover Effect */
+.btn.whatsapp:hover {
+  transform: scale(1.12);
+  box-shadow:
+    0 0 25px rgba(37, 211, 102, 1),
+    0 0 60px rgba(37, 211, 102, 0.9);
 }
 
-.btn:hover {
-  transform: scale(1.08);
+/* Pulse Animation */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 15px rgba(37, 211, 102, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(37, 211, 102, 1);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(37, 211, 102, 0.6);
+  }
 }
-
 /* ===== FOOTER ===== */
 footer {
   text-align: center;
@@ -327,4 +345,63 @@ footer {
   .menu-box li {
     font-size: 0.95rem;
   }
+}
+@media (max-width: 768px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  .menu-section {
+    padding: 25px 10px;
+  }
+
+  .menu-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .menu-box {
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 22px;
+  }
+
+  .menu-box h3 {
+    font-size: 1.25rem;
+  }
+
+  .menu-box li {
+    font-size: 0.95rem;
+    padding: 7px 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .btn-area {
+    margin-top: 25px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 340px;
+    font-size: 1.15rem;
+    padding: 18px 0;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .qr-section img {
+    width: 90%;
+    max-width: 300px;
+    margin: 15px auto;
+    display: block;
+  }
+
 }
